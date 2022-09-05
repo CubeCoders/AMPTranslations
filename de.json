@@ -1,0 +1,14 @@
+{
+  "LocaleName": "de",
+  "TranslationAuthor": "Johannes Baschin",
+  "MonthsOfYear": [ "Jan.", "Feb.", "Mär.", "Apr.", "Mai", "Jun.", "Jul.", "Aug.", "Sep.", "Okt.", "Nov.", "Dez." ],
+  "DaysOfWeek": [ "Mo.", "Di.", "Mi.", "Do.", "Fr.", "Sa.", "So." ],
+  "LongDaysOfWeek": [ "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag" ],
+  "Strings": {
+    "Username": "Benutzername",
+    "Password": "Passwort",
+    "Remember Me": "Angemeldet bleiben",
+    "Welcome to AMP": "Willkommen bei AMP"
+  }
+}
+
