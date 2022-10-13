@@ -15,6 +15,7 @@ Any strings within AMP that don't exist in your translation file will remain as 
 ## Determine missing translations
 
 AMP offers a TranslatorMode. To use it open your browser console (F12) and execute `Locale.SetTranslatorMode()`. While browsing through AMP it will keep track of translatable strings. After your done using AMP for a bit execute `Locale.DownloadJSONFile()` to download your new JSON file.
+Note that you should enable the TranslatorMode already on the login screen.
 
 ## Testing your translation
 
