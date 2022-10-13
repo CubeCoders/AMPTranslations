@@ -2,8 +2,6 @@
 
 AMP 2.2.1.0 and newer support localisation through the use of a locale file that has the various AMP messages in different languages. These are accessible so that anyone can contribute new languages or collaborate on existing ones.
 
-Note: At time of writing, you'll need to use the Nightly AMP build to get this functionality as 2.2.1.0 has not yet been released.
-
 ## Building Translation Files
 
 Under `WebRoot/Locale` you'll find a file called `xx.json` that shows you the structure of the language file. A copy of this also exists in this repo.
@@ -13,6 +11,10 @@ Duplicate this file, and rename it to the appropriate two-letter [ISO 639-1 code
 Under the 'Strings' object, there is a key for each original text node in English, followed by its translation in whatever language you chose. You'll also need to replace the `LocaleName` object to match the ISO 639-1 code, and update the `MonthsOfYear`, `DaysOfWeek` and `LongDaysOfWeek` arrays to have the months and days in your target language.
 
 Any strings within AMP that don't exist in your translation file will remain as English, so you can work on it gradually over time.
+
+## Determine missing translations
+
+AMP offers a TranslatorMode. To use it open your browser console (F12) and execute `Locale.SetTranslatorMode()`. While browsing through AMP it will keep track of translatable strings. After your done using AMP for a bit execute `Locale.DownloadJSONFile()` to download your new JSON file.
 
 ## Testing your translation
 
