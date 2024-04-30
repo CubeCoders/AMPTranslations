@@ -583,7 +583,7 @@
     "Level8":"Level8",
     "Level9":"Level9",
     "Login rate-limit time window":"로그인 비율 제한 시간",
-    "How many minutes the sliding window should be to check for authentication failures.":"인증 실패를 확인하는 데 슬라이딩 윈도우가 필요한 시간(분)을 설정합니다.",
+    "How many minutes the sliding window should be to check for authentication failures.":"슬라이딩 창이 인증 실패를 확인하는 데 필요한 시간(분)입니다.",
     "Login rate-limit attempts":"로그인 시도 제한 횟수",
     "If more than this number attempts occurs within the rate-limit time window, the IP address will be unable to make further login requests":"비율 제한 시간 내에 설정된 횟수보다 많은 시도가 발생하면 해당 IP 주소는 더 이상 로그인 요청을 할 수 없게 됩니다",
     "attempts":"번째 시도",
