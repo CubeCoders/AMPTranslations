@@ -30,7 +30,7 @@
     "Setup secure login": "보안 로그인 구성",
     "Manage tokens": "토큰 관리",
     "Change Password": "암호 변경",
-	"Old Password": "이전 암호",
+  	"Old Password": "이전 암호",
     "New Password": "새 암호",
     "Confirm Password": "암호 확인",
     "Password Strength": "암호 강도",
