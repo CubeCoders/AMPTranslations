@@ -3,7 +3,6 @@
   "DaysOfWeek": [ "월", "화", "수", "목", "금", "토", "일" ],
   "LongDaysOfWeek": [ "월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일" ],
   "LocaleName": "ko",
-  "TranslationAuthor": "Angrystar170",
   "Strings": {
     "Related Link:": "관련 링크:",
     "Advanced Details": "고급 상세 정보",
