@@ -23,6 +23,7 @@
     "Two factor authentication (2FA)": "2단계 인증 (2FA)",
     " 2FA is currently": " 2FA는 현재",
     "Disabled": "비활성화됨",
+    "Enabled": "활성화됨",
     "Setup 2FA": "2FA 구성",
     "Disable 2FA": "2FA 비활성화",
     "Biometric/Token Login (Webauthn)": "생체 인식/토큰 로그인 (Webauthn)",
