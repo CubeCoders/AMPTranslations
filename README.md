@@ -17,6 +17,21 @@ Any strings within AMP that don't exist in your translation file will remain as 
 AMP offers a TranslatorMode. To use it open your browser console (F12) and execute `Locale.SetTranslatorMode()`. While browsing through AMP it will keep track of translatable strings. After you're done using AMP for a bit execute `Locale.DownloadJSONFile()` to download your new JSON file.
 Note that you should enable the TranslatorMode already while on the login screen.
 
+Here is a script you can paste into the Console to generate a printout of most the strings:
+```
+            var messages = {};
+            $("body *")
+                .contents()
+                .filter((_, e) => e.nodeType === Node.TEXT_NODE && e.textContent.match(/[a-zA-Z]\w/) && !e.textContent.contains("<!-- ko"))
+                .each(function (_, e) {
+                    e.textContent = e.textContent.replace(/^(\s*)([a-zA-Z ].+?)(\s*)$/, function (match, p1, p2, p3) {
+                        messages[p2] = p2;
+                        return `${p1}${p2}${p3}`
+                    });
+                });
+            console.log(JSON.stringify(messages));
+```
+
 ## Testing your translation
 
 Place your new `.json` file in the `WebRoot/Locale` directory, then navigate to your AMP installation with `?lang=xx` at the end of the URL, with `xx` corresponding to the ISO 639-1 code for your file. E.g. `https://panel.example.com/?lang=de` - AMP will then load this language file. You can revert back to English by using `?lang=en`.
